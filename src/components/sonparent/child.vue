@@ -1,6 +1,6 @@
 <template>
   <div>
-    //点击按钮会调用cjMsg方法，此方法会把一个对应的值传递给父亲
+    <!--点击按钮会调用cjMsg方法，此方法会把一个对应的值传递给父亲-->
     <button v-on:click="cjMsg">我要传递给父组件一个值</button>
   </div>
 </template>
