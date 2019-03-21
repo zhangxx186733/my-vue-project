@@ -1,22 +1,23 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <FormData/>
-    <Style/>
+    <MyComp/>
   </div>
 </template>
 <script>
-import  TestDemo from './components/TestDemo'
-import  FormData from './components/formdata'
-import  Style from  './components/style'
-export default {
-  name: 'App',
-  components: {
-    TestDemo,
-    FormData,
-    Style
+  import  TestDemo from './components/TestDemo'
+  import  FormData from './components/formdata'
+  import  Style from  './components/style'
+  import  MyComp from './components/mycomponents'
+  export default {
+    name: 'App',
+    components: {
+      TestDemo,
+      FormData,
+      Style,
+      MyComp
+    }
   }
-}
 </script>
 <style>
 #app {
