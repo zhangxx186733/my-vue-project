@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <MyComp/>
+    <Parent/>
   </div>
 </template>
 <script>
@@ -9,13 +9,15 @@
   import  FormData from './components/formdata'
   import  Style from  './components/style'
   import  MyComp from './components/mycomponents'
+  import  Parent from  './components/sonparent/parent'
   export default {
     name: 'App',
     components: {
       TestDemo,
       FormData,
       Style,
-      MyComp
+      MyComp,
+      Parent
     }
   }
 </script>
