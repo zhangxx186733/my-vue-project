@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <Parent/>
+    <DefaultCom/>
   </div>
 </template>
 <script>
@@ -10,6 +10,11 @@
   import  Style from  './components/style'
   import  MyComp from './components/mycomponents'
   import  Parent from  './components/sonparent/parent'
+  import  Slots from  './components/slots/parent'
+  import  KeepAlive from './components/keepcom/big'
+  import  Anim from './components/anim/aime'
+  import Hello from './components/HelloWorld'
+  import DefaultCom from  './components/defauleCom/defaultCom'
   export default {
     name: 'App',
     components: {
@@ -17,7 +22,12 @@
       FormData,
       Style,
       MyComp,
-      Parent
+      Parent,
+      Slots,
+      KeepAlive,
+      Anim,
+      Hello,
+      DefaultCom
     }
   }
 </script>
