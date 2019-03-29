@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <DefaultCom/>
+    <Post/>
   </div>
 </template>
 <script>
@@ -15,6 +16,7 @@
   import  Anim from './components/anim/aime'
   import Hello from './components/HelloWorld'
   import DefaultCom from  './components/defauleCom/defaultCom'
+  import Post from './components/postAxios/postAxios'
   export default {
     name: 'App',
     components: {
@@ -27,7 +29,8 @@
       KeepAlive,
       Anim,
       Hello,
-      DefaultCom
+      DefaultCom,
+      Post
     }
   }
 </script>
