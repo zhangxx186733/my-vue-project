@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <DefaultCom/>
-    <Post/>
+    <NavList></NavList>
+    <!--路由访问router-view-->
+    <router-view></router-view>
   </div>
 </template>
 <script>
+  import  NavList from  './components/NavList'
   import  TestDemo from './components/TestDemo'
   import  FormData from './components/formdata'
   import  Style from  './components/style'
@@ -14,9 +16,9 @@
   import  Slots from  './components/slots/parent'
   import  KeepAlive from './components/keepcom/big'
   import  Anim from './components/anim/aime'
-  import Hello from './components/HelloWorld'
   import DefaultCom from  './components/defauleCom/defaultCom'
   import Post from './components/postAxios/postAxios'
+  import Mocks from  './components/mock/mock'
   export default {
     name: 'App',
     components: {
@@ -28,9 +30,10 @@
       Slots,
       KeepAlive,
       Anim,
-      Hello,
       DefaultCom,
-      Post
+      Post,
+      NavList,
+      Mocks
     }
   }
 </script>
