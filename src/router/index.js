@@ -6,9 +6,11 @@ import ZhuanJia from '@/components/forrouter/zhuanjia'
 import JiaBan from '@/components/forrouter/page/jiaban'
 import JJL from '@/components/forrouter/page/jjl'
 import SSX from '@/components/forrouter/page/ssx'
+
 Vue.use(Router)
 
 export default new Router({
+  linkActiveClass: 'active',//html默认类active
   routes: [{
     path: '/',
     namne: 'index',
@@ -19,15 +21,15 @@ export default new Router({
       name: 'kecheng',
       component: KeCheng,
       //默认重定向到jiaban子路由
-      redirect:'/kecheng/jiaban',
-      children:[//嵌套路由
+      redirect: '/kecheng/jiaban',
+      children: [//嵌套路由
         {
           path: 'jiaban',
           name: 'jiaban',
           component: JiaBan,
         },
         {
-          path: 'jjl',
+          path: 'jjl/:gz/:obj',//传递参数，key为gz
           name: 'jjl',
           component: JJL,
         },

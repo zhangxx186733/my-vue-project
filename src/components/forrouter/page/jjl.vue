@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    九九六
+    九九六{{$route.params.gz}}+{{$route.params.obj}}
   </div>
 </template>
 <script>

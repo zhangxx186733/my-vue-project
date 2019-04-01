@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <ul>
-      <li><router-link to="/">首页</router-link></li>
+      <!--exact 显示一个-->
+      <li><router-link exact to="/" >首页</router-link></li>
       <li><router-link to="/kecheng">课程</router-link></li>
       <li><router-link to="/zhuanjia">专家</router-link></li>
     </ul>
